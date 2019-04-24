@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-student-heading" jhiTranslate="studireApp.student.home.createOrEditLabel">Create or edit a Student</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!student.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="student.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.matrikelnummer" for="field_matrikelnummer">Matrikelnummer</label>
+                    <input type="number" class="form-control" name="matrikelnummer" id="field_matrikelnummer" readonly
+                        [(ngModel)]="student.matrikelnummer" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.nachname" for="field_nachname">Nachname</label>
+                    <input type="text" class="form-control" name="nachname" id="field_nachname"
+                        [(ngModel)]="student.nachname" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.vorname" for="field_vorname">Vorname</label>
+                    <input type="text" class="form-control" name="vorname" id="field_vorname"
+                        [(ngModel)]="student.vorname" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.strasse" for="field_strasse">Strasse</label>
+                    <input type="text" class="form-control" name="strasse" id="field_strasse"
+                        [(ngModel)]="student.strasse" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.postleitzahl" for="field_postleitzahl">Postleitzahl</label>
+                    <input type="number" class="form-control" name="postleitzahl" id="field_postleitzahl"
+                        [(ngModel)]="student.postleitzahl" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="studireApp.student.ort" for="field_ort">Ort</label>
+                    <input type="text" class="form-control" name="ort" id="field_ort"
+                        [(ngModel)]="student.ort" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

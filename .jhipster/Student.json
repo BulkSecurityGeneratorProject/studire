@@ -1,0 +1,39 @@
+{
+    "name": "Student",
+    "fields": [
+        {
+            "fieldName": "matrikelnummer",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nachname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vorname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "strasse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "postleitzahl",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ort",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190424121912",
+    "entityTableName": "student",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
