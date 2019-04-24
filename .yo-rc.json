@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.iam.student",
+            "nativeLanguage": "de"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "studire",
+        "packageName": "com.iam.student",
+        "packageFolder": "com/iam/student",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "NTY1MTcyMjgxZmNkZTA5OTVlOGEyMDdiNzg2MjNiYzJjYTJjOTA2MzY1ZWU1MDM3YTU2YmQyOTQwYTlmYTdiNGJmZGQ5NTNkMTQ3ZDM0MDAxODI0Njg4YmQ5OWIxNjY5NDU5NjExNmVmZmIzM2MyOWUxZDE3OGU0OTBjYTU4NjY=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "de",
+        "languages": ["de"]
+    }
+}
